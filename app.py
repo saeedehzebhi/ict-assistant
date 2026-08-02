@@ -14,9 +14,10 @@ st.set_page_config(
 # -----------------------------
 # خواندن فایل Excel
 # -----------------------------
+# "C:/Users/AllUser/Desktop/ICT-streamlit/villages.xlsx"
 @st.cache_data
 def load_data():
-    return pd.read_excel("C:/Users/AllUser/Desktop/ICT-streamlit/villages.xlsx")
+    return pd.read_excel("villages.xlsx")
 
 
 df = load_data()
